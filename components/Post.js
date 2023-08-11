@@ -30,7 +30,7 @@ export default function Post (props) {
         'w-full font-bold text-3xl text-black dark:text-white',
         { 'max-w-2xl px-4': !fullWidth }
       )}>
-        {post.title}
+        {post.pageIcon} {post.title}
       </h1>
       {post.type[0] !== 'Page' && (
         <nav className={cn(
