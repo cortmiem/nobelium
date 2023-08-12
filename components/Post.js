@@ -26,12 +26,21 @@ export default function Post (props) {
 
   return (
     <article className={cn('flex flex-col', fullWidth ? 'md:px-24' : 'items-center')}>
-      <h1 className={cn(
-        'w-full font-bold text-3xl text-black dark:text-white',
-        { 'max-w-2xl px-4': !fullWidth }
-      )}>
-        {post.pageIcon} {post.title}
-      </h1>
+      {post.pageIcon.startsWith("http") ? (
+        <h1 className={cn(
+          'w-full inline-flex font-bold text-3xl text-black dark:text-white',
+          {'max-w-2xl px-4': !fullWidth}
+        )}>
+          <img src={`${post.pageIcon}`} alt={post.title} className="max-h-8"/> {post.title}
+        </h1>
+      ) : (
+        <h1 className={cn(
+          'w-full font-bold text-3xl text-black dark:text-white',
+          {'max-w-2xl px-4': !fullWidth}
+        )}>
+          {post.pageIcon} {post.title}
+        </h1>
+      )}
       {post.type[0] !== 'Page' && (
         <nav className={cn(
           'w-full flex mt-7 items-start text-gray-500 dark:text-gray-400',
