@@ -26,7 +26,7 @@ export default function Post (props) {
 
   return (
     <article className={cn('flex flex-col', fullWidth ? 'md:px-24' : 'items-center')}>
-      {post.pageIcon.startsWith("http") ? (
+      {post.pageIcon.startsWith("data") ? (
         <h1 className={cn(
           'w-full inline-flex font-bold text-3xl text-black dark:text-white',
           {'max-w-2xl px-4': !fullWidth}

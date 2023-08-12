@@ -9,7 +9,7 @@ const BlogPost = ({ post }) => {
     <Link href={`${BLOG.path}/${post.slug}`}>
       <article key={post.id} className="mb-6 md:mb-8">
         <header className="flex flex-col justify-between md:flex-row md:items-baseline">
-          {post.pageIcon.startsWith("http") ? (
+          {post.pageIcon.startsWith("data") ? (
             <h2 className="text-lg inline-flex md:text-xl font-medium mb-2 cursor-pointer text-black dark:text-gray-100">
               <img src={`${post.pageIcon}`} alt={post.title} className="max-h-6"/>{post.title}
             </h2>
