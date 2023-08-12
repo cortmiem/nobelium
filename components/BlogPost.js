@@ -11,7 +11,7 @@ const BlogPost = ({ post }) => {
         <header className="flex flex-col justify-between md:flex-row md:items-baseline">
           {post.pageIcon.startsWith("data") ? (
             <h2 className="text-lg inline-flex md:text-xl font-medium mb-2 cursor-pointer text-black dark:text-gray-100">
-              <img src={`${post.pageIcon}`} alt={post.title} className="max-h-6"/>{post.title}
+              <img src={`${post.pageIcon}`} alt={post.title} className="max-h-6"/>&nbsp;{post.title}
             </h2>
           ) : (
             <h2 className="text-lg md:text-xl font-medium mb-2 cursor-pointer text-black dark:text-gray-100">

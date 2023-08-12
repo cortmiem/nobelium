@@ -31,7 +31,7 @@ export default function Post (props) {
           'w-full inline-flex font-bold text-3xl text-black dark:text-white',
           {'max-w-2xl px-4': !fullWidth}
         )}>
-          <img src={`${post.pageIcon}`} alt={post.title} className="max-h-8"/> {post.title}
+          <img src={`${post.pageIcon}`} alt={post.title} className="max-h-8"/>&nbsp;{post.title}
         </h1>
       ) : (
         <h1 className={cn(
