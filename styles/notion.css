@@ -98,7 +98,7 @@
 .notion-quote,
 .notion-h-title {
   @apply p-0;
-  @apply my-3;
+  /*@apply my-3;*/
   line-height: var(--no-leading);
 }
 .notion-page-link {
@@ -181,6 +181,9 @@ pre[class*='language-'] {
 }
 .notion-list {
   width: 100%;
+}
+.notion-list li{
+  padding: unset;
 }
 .notion-collection {
   @apply max-w-full;
