@@ -20,7 +20,7 @@ const BLOG = {
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
   socialLink: 'https://twitter.com/cortmiem',
   seo: {
-    keywords: ['Blog', 'Website', 'Cortmiem', 'Asuharayuuki', 'あすはら', 'Notion'],
+    keywords: ['Blog', 'Website', 'Cortmiem', 'Asuharayuuki', 'あすはら', 'Notion', 'ヰ世界製菓', '异世界制果'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
