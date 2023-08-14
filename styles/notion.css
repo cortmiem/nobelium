@@ -437,3 +437,11 @@ pre[class*='language-']:after {
 .notion-bookmark {
   border-radius: 0px;
 }
+
+/* icon */
+.dark-mode .notion-external-image,
+.dark-mode .notion-file-icon {
+  /* stroke: white; */
+  filter: invert(100%) hue-rotate(180deg) contrast(100%);
+}
+
