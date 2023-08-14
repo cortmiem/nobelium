@@ -113,6 +113,10 @@ svg + .notion-page-title-text {
   @apply border-b-0;
 }
 
+.notion-callout {
+  padding: 8px 8px 8px 8px;
+}
+
 .notion-callout > .notion-page-icon-inline {
   max-width: unset;
   max-height: unset;
