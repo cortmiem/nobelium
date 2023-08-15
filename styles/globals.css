@@ -154,6 +154,11 @@ nav {
   }
 }
 
+@media (max-width: 768px) {
+  main {
+    margin: 10px;
+  }
+}
 @supports not (backdrop-filter: none) {
   .sticky-nav {
     backdrop-filter: none;
