@@ -156,7 +156,10 @@ nav {
 
 @media (max-width: 768px) {
   main {
-    margin: 10px;
+    margin: 2em;
+  }
+  .pr-4 {
+    padding-right: 0em;
   }
 }
 @supports not (backdrop-filter: none) {
