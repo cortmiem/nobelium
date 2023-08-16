@@ -445,3 +445,10 @@ pre[class*='language-']:after {
   filter: invert(100%) hue-rotate(180deg) contrast(100%);
 }
 
+.notion-external {
+  line-height: normal;
+}
+
+.notion-external-description {
+  align-self: center;
+}
