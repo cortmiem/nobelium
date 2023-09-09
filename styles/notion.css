@@ -89,18 +89,44 @@
   --bg-color-2: rgba(135, 131, 120, 0.15);
 }
 
+:is(.dark .dark\:bg-night) {
+  background-color: #191919!important;
+}
+
 .notion {
   @apply text-gray-600 dark:text-gray-300;
   overflow-wrap: break-word;
 }
 .notion,
 .notion-text,
-.notion-quote,
-.notion-h-title {
-  @apply p-0;
-  @apply my-3;
-  line-height: var(--no-leading);
+.notion-quote {
+  padding: 3px 2px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
+
+.notion-h-title {
+  padding: 3px 2px;
+  margin-top: 1.4em;
+  margin-bottom: 1px;
+  margin-left: -2px;
+}
+
+.nobelium-toggle,
+notion-list {
+  padding: 3px 2px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.nobelium-toggle-title {
+  padding: 0 2px;
+}
+
+.nobelium-toggle-triangle {
+  width: 1.5rem!important;
+}
+
 .notion-page-link {
   color: inherit;
 }
@@ -451,4 +477,14 @@ pre[class*='language-']:after {
 
 .notion-external-description {
   align-self: center;
+}
+
+li::marker {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 0px;
+}
+
+.notion-link {
+  border-color: rgba(255, 255, 255, 0.283);
 }
